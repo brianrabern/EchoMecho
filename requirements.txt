@@ -1,0 +1,4 @@
+nltk==3.8.1
+PyAudio==0.2.13
+streamlit==1.26.0
+websockets==11.0.3
