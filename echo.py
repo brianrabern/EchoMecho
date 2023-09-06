@@ -8,7 +8,7 @@ import base64
 import json
 from nltk.corpus import cmudict
 import nltk
-# from config import auth_key
+from config import auth_key
 
 nltk.download('cmudict')
 
@@ -126,7 +126,7 @@ async def send_receive():
     print(f'Connecting websocket to url ${URL}')
     async with websockets.connect(
         URL,
-        extra_headers=(("Authorization", st.secrets.auth_key),
+        extra_headers=(("Authorization", auth_key),
                        ),  # for local use import auth_key from config; for delopy I'm using streamlit sercrets managament # noqa
         ping_interval=5,
         ping_timeout=20
