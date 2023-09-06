@@ -10,6 +10,7 @@ from nltk.corpus import cmudict
 import nltk
 # from config import auth_key
 
+nltk.download('cmudict')
 
 with open("word_last_syllables.json", "r") as f:
     word_last_syllables = json.load(f)
