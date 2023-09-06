@@ -59,6 +59,7 @@ stream = p.open(
     channels=CHANNELS,
     rate=RATE,
     input=True,
+    output_device_index=None,
     frames_per_buffer=FRAMES_PER_BUFFER
 )
 
